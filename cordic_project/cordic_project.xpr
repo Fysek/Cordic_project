@@ -87,11 +87,14 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="cordic_project.bd" FileRelPathName="cordic_project_cordic_pipe_rtl_0_0.xml"/>
+        <CompFileExtendedInfo CompFileName="cordic_project.bd" FileRelPathName="ip/cordic_project_cordic_inc_vhdl_0_0/cordic_project_cordic_inc_vhdl_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="cordic_project.bd" FileRelPathName="ip/cordic_project_cordic_pipe_rtl_0_0/cordic_project_cordic_pipe_rtl_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="cordic_project.bd" FileRelPathName="cordic_project_cordic_inc_vhdl_0_1.xml"/>
+        <CompFileExtendedInfo CompFileName="cordic_project.bd" FileRelPathName="ip/cordic_project_cordic_trigon_0_0/cordic_project_cordic_trigon_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="cordic_project.bd" FileRelPathName="ip/cordic_project_cordic_inc_vhdl_0_1/cordic_project_cordic_inc_vhdl_0_1.xci"/>
+        <CompFileExtendedInfo CompFileName="cordic_project.bd" FileRelPathName="cordic_project_cordic_pipe_rtl_0_0.xml"/>
         <CompFileExtendedInfo CompFileName="cordic_project.bd" FileRelPathName="cordic_project_cordic_inc_vhdl_0_0.xml"/>
+        <CompFileExtendedInfo CompFileName="cordic_project.bd" FileRelPathName="cordic_project_cordic_trigon_0_0.xml"/>
+        <CompFileExtendedInfo CompFileName="cordic_project.bd" FileRelPathName="cordic_project_cordic_inc_vhdl_0_1.xml"/>
       </File>
       <File Path="$PSRCDIR/sources_1/new/cordic_trigon.vhd">
         <FileInfo>

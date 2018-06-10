@@ -46,7 +46,10 @@ port(
 end cordic_trigon;
 
 architecture Behavioral of cordic_trigon is
-
+	
+signal sin_reg : signed;
+signal cos_reg : signed; 	
+		
 begin
 process(clk,reset)
     begin
