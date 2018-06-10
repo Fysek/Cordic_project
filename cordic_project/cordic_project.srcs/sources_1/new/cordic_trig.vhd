@@ -22,6 +22,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 USE ieee.numeric_std.ALL;
+
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 --use IEEE.NUMERIC_STD.ALL;
@@ -47,8 +48,8 @@ end cordic_trig;
 
 architecture Behavioral of cordic_trig is
 	
-signal sin_reg : signed;
-signal cos_reg : signed; 	
+signal sin_reg : unsigned(15 downto 0);
+signal cos_reg : unsigned(15 downto 0); 	
 		
 begin
 process(clk,reset)
@@ -59,8 +60,8 @@ process(clk,reset)
 	else
 	   case mode is
             when "00" =>   
-                sin_out <= sin_in;
-                cos_out <= cos_in; 	   
+                sin_reg <= shift_right(unsigned(sin_in), 3);
+                cos_reg <= shift_right(unsigned(cos_in), 3); 	   
             when "01" =>   
                 sin_out <= sin_in;
                 cos_out <= cos_in; 
@@ -76,5 +77,9 @@ process(clk,reset)
        end case;
 	end if;	
 end process;
-
+sin_out <= sin_reg;
 end Behavioral;
+
+
+-- in 11 1111 1111 >>3  => 111 1111
+-- signed so 0111 1111 or 1111 1111
