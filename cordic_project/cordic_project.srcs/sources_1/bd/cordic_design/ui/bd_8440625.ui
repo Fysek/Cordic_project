@@ -1,0 +1,27 @@
+{
+   guistr: "# # String gsaved with Nlview 6.6.5b  2016-09-06 bk=1.3687 VDI=39 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port clock -pg 1 -y 70 -defaultsOSRD
+preplace port note_en -pg 1 -y 130 -defaultsOSRD
+preplace port ce_cordic -pg 1 -y 170 -defaultsOSRD
+preplace port reset -pg 1 -y 100 -defaultsOSRD
+preplace portBus note -pg 1 -y 210 -defaultsOSRD
+preplace portBus sin_out -pg 1 -y 110 -defaultsOSRD
+preplace portBus cos_out -pg 1 -y 130 -defaultsOSRD
+preplace inst cordic_inc_0 -pg 1 -lvl 1 -y 110 -defaultsOSRD
+preplace inst cordic_trig_0 -pg 1 -lvl 3 -y 110 -defaultsOSRD
+preplace inst cordic_pipe_rtl_0 -pg 1 -lvl 2 -y 110 -defaultsOSRD
+preplace netloc ce_cordic_1 1 0 2 -200J 30 310
+preplace netloc cordic_inc_0_mode 1 1 2 320J 30 640J
+preplace netloc cordic_pipe_rtl_0_sin_out 1 2 1 630
+preplace netloc cordic_trig_0_sin_out 1 3 1 930
+preplace netloc note_en_1 1 0 1 -190
+preplace netloc cordic_trig_0_cos_out 1 3 1 930
+preplace netloc cordic_inc_0_inc_value 1 1 1 300
+preplace netloc Net1 1 0 3 -180 20 330 20 650
+preplace netloc Net 1 0 3 -190 0 340J 0 660
+preplace netloc cordic_pipe_rtl_0_cos_out 1 2 1 620
+preplace netloc note_1 1 0 1 -180
+levelinfo -pg 1 -220 180 490 800 950 -top -100 -bot 350
+",
+}

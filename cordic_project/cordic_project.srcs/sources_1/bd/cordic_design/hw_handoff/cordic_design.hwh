@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Jun 11 23:15:36 2018" VIVADOVERSION="2016.4">
+
+  <SYSTEMINFO ARCH="zynq" BOARD="em.avnet.com:zed:part0:1.3" DEVICE="7z020" NAME="cordic_design" PACKAGE="clg484" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="clock" SIGIS="undef" SIGNAME="External_Ports_clock">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="cordic_pipe_rtl_0" PORT="clock"/>
+        <CONNECTION INSTANCE="cordic_inc_0" PORT="clk"/>
+        <CONNECTION INSTANCE="cordic_trig_0" PORT="clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="reset" SIGIS="undef" SIGNAME="External_Ports_reset">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="cordic_pipe_rtl_0" PORT="reset"/>
+        <CONNECTION INSTANCE="cordic_inc_0" PORT="reset"/>
+        <CONNECTION INSTANCE="cordic_trig_0" PORT="reset"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="ce_cordic" SIGIS="undef" SIGNAME="External_Ports_ce_cordic">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="cordic_pipe_rtl_0" PORT="ce"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="note_en" SIGIS="undef" SIGNAME="External_Ports_note_en">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="cordic_inc_0" PORT="enable"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="15" NAME="cos_out" RIGHT="0" SIGIS="undef" SIGNAME="cordic_trig_0_cos_out">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="cordic_trig_0" PORT="cos_out"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="15" NAME="sin_out" RIGHT="0" SIGIS="undef" SIGNAME="cordic_trig_0_sin_out">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="cordic_trig_0" PORT="sin_out"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="7" NAME="note" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_note">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="cordic_inc_0" PORT="note"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE FULLNAME="/cordic_inc_0" HWVERSION="1.0" INSTANCE="cordic_inc_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="cordic_inc" VLNV="xilinx.com:module_ref:cordic_inc:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="lut_bit_width" VALUE="8"/>
+        <PARAMETER NAME="pa_bit_width" VALUE="18"/>
+        <PARAMETER NAME="Component_Name" VALUE="cordic_design_cordic_inc_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clock">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clock"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="enable" SIGIS="undef" SIGNAME="External_Ports_note_en">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="note_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="note" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_note">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="note"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="mode" RIGHT="0" SIGIS="undef" SIGNAME="cordic_inc_0_mode">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cordic_trig_0" PORT="mode"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="17" NAME="inc_value" RIGHT="0" SIGIS="undef" SIGNAME="cordic_inc_0_inc_value">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cordic_pipe_rtl_0" PORT="angle_in"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/cordic_pipe_rtl_0" HWVERSION="1.0" INSTANCE="cordic_pipe_rtl_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="cordic_pipe_rtl" VLNV="xilinx.com:module_ref:cordic_pipe_rtl:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="W" VALUE="18"/>
+        <PARAMETER NAME="FXP_MUL" VALUE="65536"/>
+        <PARAMETER NAME="PIPE_LATENCY" VALUE="15"/>
+        <PARAMETER NAME="Component_Name" VALUE="cordic_design_cordic_pipe_rtl_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clock" SIGIS="clk" SIGNAME="External_Ports_clock">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clock"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ce" SIGIS="undef" SIGNAME="External_Ports_ce_cordic">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ce_cordic"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="17" NAME="angle_in" RIGHT="0" SIGIS="undef" SIGNAME="cordic_inc_0_inc_value">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cordic_inc_0" PORT="inc_value"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="17" NAME="sin_out" RIGHT="0" SIGIS="undef" SIGNAME="cordic_pipe_rtl_0_sin_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cordic_trig_0" PORT="sin_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="17" NAME="cos_out" RIGHT="0" SIGIS="undef" SIGNAME="cordic_pipe_rtl_0_cos_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cordic_trig_0" PORT="cos_in"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/cordic_trig_0" HWVERSION="1.0" INSTANCE="cordic_trig_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="cordic_trig" VLNV="xilinx.com:module_ref:cordic_trig:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="cordic_design_cordic_trig_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clock">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clock"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="mode" RIGHT="0" SIGIS="undef" SIGNAME="cordic_inc_0_mode">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cordic_inc_0" PORT="mode"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="17" NAME="sin_in" RIGHT="0" SIGIS="undef" SIGNAME="cordic_pipe_rtl_0_sin_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cordic_pipe_rtl_0" PORT="sin_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="17" NAME="cos_in" RIGHT="0" SIGIS="undef" SIGNAME="cordic_pipe_rtl_0_cos_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cordic_pipe_rtl_0" PORT="cos_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="sin_out" RIGHT="0" SIGIS="undef" SIGNAME="cordic_trig_0_sin_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="sin_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="cos_out" RIGHT="0" SIGIS="undef" SIGNAME="cordic_trig_0_cos_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="cos_out"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

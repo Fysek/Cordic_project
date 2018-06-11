@@ -12,8 +12,8 @@ ARCHITECTURE cordic_inc_tb_arch OF cordic_inc_tb IS
 	signal reset					: std_logic;
 	signal enable					: std_logic;
 	signal note						: std_logic_vector(7 downto 0);
-	signal mode     				: unsigned(1 downto 0);
-	signal inc_value				: unsigned(17 downto 0);
+	signal mode     				: std_logic_vector(1 downto 0);
+	signal inc_value				: std_logic_vector(17 downto 0);
 
   	--Signal is used to stop clock signal generators
 	signal END_SIM		: BOOLEAN:=FALSE;
@@ -24,8 +24,8 @@ ARCHITECTURE cordic_inc_tb_arch OF cordic_inc_tb IS
 		reset		: in std_logic;
 		enable		: in std_logic;
 		note		: in std_logic_vector(7 downto 0);
-		mode     	: out unsigned(1 downto 0);
-		inc_value	: out unsigned(17 downto 0)
+		mode     	: out std_logic_vector(1 downto 0);
+		inc_value	: out std_logic_vector(17 downto 0)
 		);
   END COMPONENT ; 
 BEGIN
@@ -52,7 +52,7 @@ STIMULUS:  Process
 	wait for 10 ns; 	
 	note  		<= x"01";
 	enable 		<= '1';
-	wait for 3000 ns;
+	wait for 1000 ns;
 	wait;
  End Process;
 -----endtestbench---------------

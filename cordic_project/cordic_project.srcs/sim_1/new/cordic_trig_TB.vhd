@@ -10,7 +10,7 @@ END ;
 ARCHITECTURE cordic_trig_tb_arch OF cordic_trig_tb IS
 	signal clk					: std_logic;
 	signal reset				: std_logic;
-	signal mode					: unsigned(1 downto 0);
+	signal mode					: std_logic_vector(1 downto 0);
 	signal sin_in  				: std_logic_vector(17 downto 0);
 	signal cos_in  				: std_logic_vector(17 downto 0); 
 	signal sin_out 				: std_logic_vector(15 downto 0); 
@@ -23,7 +23,7 @@ ARCHITECTURE cordic_trig_tb_arch OF cordic_trig_tb IS
 		(
 		clk				: in std_logic;
 		reset			: in std_logic;
-		mode			: in unsigned(1 downto 0);
+		mode			: in std_logic_vector(1 downto 0);
 		sin_in  		: in std_logic_vector(17 downto 0); 
 		cos_in  		: in std_logic_vector(17 downto 0); 
 		sin_out 		: out std_logic_vector(15 downto 0);
@@ -52,7 +52,7 @@ STIMULUS:  Process
 	reset      <= '1'  ;
 	wait for 10 ns ;
 	reset	   <= '0';
-	mode       <= "00";
+	mode       <= '0';
 	wait for 10 ns; 	
 	sin_in     <= "111111111111111111";
 	cos_in 	   <= "111111111111111111";
@@ -77,13 +77,13 @@ begin
 	--this process was generated based on formula: 0 0 ns, 1 50 ns -r 100 ns
 	--wait for <time to next event>; -- <current time>
 	if END_SIM = FALSE then
-		CLK <= '0';
+		clk <= '0';
 		wait for 5 ns; --0 fs
 	else
 		wait;
 	end if;
 	if END_SIM = FALSE then
-		CLK <= '1';
+		clk <= '1';
 		wait for 5 ns; --5 ns
 	else
 		wait;

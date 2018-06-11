@@ -37,7 +37,7 @@ entity cordic_trig is
 port(      
           clk			: in std_logic;
 		  reset			: in std_logic;
-		  mode			: in unsigned(1 downto 0);
+		  mode			: in std_logic_vector(1 downto 0);
           sin_in        : in std_logic_vector(17 downto 0); 
           cos_in        : in std_logic_vector(17 downto 0); 
           sin_out       : out std_logic_vector(15 downto 0); 

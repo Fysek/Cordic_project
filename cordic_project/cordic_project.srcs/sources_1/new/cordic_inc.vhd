@@ -10,8 +10,8 @@ ENTITY cordic_inc IS
 		reset			: in std_logic;
 		enable			: in std_logic;
         note			: in std_logic_vector(7 downto 0); --Note ON/OFF 0x80(off), 0xFF(on);
-        mode            : out unsigned(1 downto 0); 
-		inc_value       : out unsigned(17 downto 0)
+        mode            : out std_logic_vector(1 downto 0); 
+		inc_value       : out std_logic_vector(17 downto 0)
 		 );
 end cordic_inc;
 
@@ -48,8 +48,8 @@ process(clk,reset)
             inc_value_sum <=sum;   			 
 		end if; 
 end process;
-mode        <= inc_mode;
-inc_value   <= inc_value_sum; 
+mode        <= std_logic_vector(inc_mode);
+inc_value   <= std_logic_vector(inc_value_sum); 
 end architecture;
  
 
