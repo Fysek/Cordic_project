@@ -49,14 +49,26 @@ BEGIN
 STIMULUS:  Process
 
 	begin 
-	reset	 	<= '1'  ;
+	reset      <= '1'  ;
 	wait for 10 ns ;
-	reset	 	<= '0';
-	enable 		<= '0';
+	reset	   <= '0';
+	mode       <= "00";
 	wait for 10 ns; 	
-	note  		<= x"01";
-	enable 		<= '1';
-	wait for 3000 ns;
+	sin_in     <= "111111111111111111";
+	cos_in 	   <= "111111111111111111";
+	wait for 10 ns; 
+	mode       <= "11";
+	sin_in     <= "010111111111111111";
+    cos_in     <= "110111111111111111";
+    wait for 10 ns; 
+    mode       <= "10";
+    sin_in     <= "010111111110111111";
+    cos_in     <= "110111111101111111";
+    wait for 10 ns; 
+    mode       <= "01";
+    sin_in     <= "110111111110111111";
+    cos_in     <= "010111111101111111";
+	wait for 100 ns;
 	wait;
  End Process;
 -----endtestbench---------------

@@ -47,37 +47,38 @@ port(
 end cordic_trig;
 
 architecture Behavioral of cordic_trig is
-	
-signal sin_reg : unsigned(15 downto 0);
-signal cos_reg : unsigned(15 downto 0); 	
+		
+signal sin_vec : std_logic_vector(15 downto 0); 	
+signal cos_vec : std_logic_vector(15 downto 0); 	
 		
 begin
 process(clk,reset)
     begin
     if reset = '1' then
-		sin_out <= (others => '0');
-		cos_out <= (others => '0');
-	else
+		sin_vec <= (others => '0');
+		cos_vec <= (others => '0');
+	elsif rising_edge(clk)then
 	   case mode is
             when "00" =>   
-                sin_reg <= shift_right(unsigned(sin_in), 3);
-                cos_reg <= shift_right(unsigned(cos_in), 3); 	   
+                sin_vec <= '0' & std_logic_vector(resize(shift_right(unsigned(sin_in), 3),15));--positive
+                cos_vec <= '0' & std_logic_vector(resize(shift_right(unsigned(cos_in), 3),15));--positive 	   
             when "01" =>   
-                sin_out <= sin_in;
-                cos_out <= cos_in; 
+                sin_vec <= '0' & std_logic_vector(resize(shift_right(unsigned(cos_in), 3),15));--positive
+                cos_vec <= '1' & std_logic_vector(resize(shift_right(unsigned(sin_in), 3),15));--negative
             when "10" =>   
-                sin_out <= sin_in;
-                cos_out <= cos_in; 
+                sin_vec <= '1' & std_logic_vector(resize(shift_right(unsigned(sin_in), 3),15));--negative
+                cos_vec <= '1' & std_logic_vector(resize(shift_right(unsigned(cos_in), 3),15));--negative
             when "11" =>   
-                sin_out <= sin_in;
-                cos_out <= cos_in;                      
+                sin_vec <= '1' & std_logic_vector(resize(shift_right(unsigned(cos_in), 3),15));--negative
+                cos_vec <= '0' & std_logic_vector(resize(shift_right(unsigned(sin_in), 3),15));--positive              
             when others => 
-                sin_out <= sin_in;
-                cos_out <= cos_in; 
+                sin_vec <= '0' & std_logic_vector(resize(shift_right(unsigned(sin_in), 3),15));--positive
+                cos_vec <= '0' & std_logic_vector(resize(shift_right(unsigned(cos_in), 3),15));--positive         
        end case;
 	end if;	
 end process;
-sin_out <= sin_reg;
+sin_out <= sin_vec;
+cos_out <= cos_vec;
 end Behavioral;
 
 

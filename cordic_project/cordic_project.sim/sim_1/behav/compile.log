@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Fysek/Documents/projects/cordic/cordic_project/cordic_project.srcs/sources_1/new/cordic_trig.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity cordic_trig
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Fysek/Documents/projects/cordic/cordic_project/cordic_project.srcs/sim_1/new/cordic_trig_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity cordic_trig_tb
