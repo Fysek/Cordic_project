@@ -2,20 +2,20 @@
 <Root MajorVersion="0" MinorVersion="33">
   <CompositeFile CompositeFileTopName="cordic_design" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="STALE" Timestamp="1528751737"/>
-    <Generation Name="IMPLEMENTATION" State="STALE" Timestamp="1528751736"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1528751737"/>
+    <Generation Name="SYNTHESIS" State="RESET" Timestamp="1528830501"/>
+    <Generation Name="IMPLEMENTATION" State="RESET" Timestamp="1528830501"/>
+    <Generation Name="SIMULATION" State="RESET" Timestamp="1528830501"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
-      <File Name="ip\cordic_design_cordic_inc_0_0\cordic_design_cordic_inc_0_0.xci" Type="IP">
-        <Instance HierarchyPath="cordic_inc_0"/>
+      <File Name="ip\cordic_design_cordic_pipe_rtl_0_0\cordic_design_cordic_pipe_rtl_0_0.xci" Type="IP">
+        <Instance HierarchyPath="cordic_pipe_rtl_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\cordic_design_cordic_pipe_rtl_0_0\cordic_design_cordic_pipe_rtl_0_0.xci" Type="IP">
-        <Instance HierarchyPath="cordic_pipe_rtl_0"/>
+      <File Name="ip\cordic_design_cordic_inc_0_1\cordic_design_cordic_inc_0_1.xci" Type="IP">
+        <Instance HierarchyPath="cordic_inc_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -30,10 +30,11 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="hdl\cordic_design.vhd" Type="VHDL">
+      <File Name="hdl\cordic_design.v" Type="Verilog">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="cordic_design_ooc.xdc" Type="XDC">
@@ -42,21 +43,6 @@
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="OUT_OF_CONTEXT"/>
-      </File>
-      <File Name="hw_handoff\cordic_design.hwh" Type="HwHandoff">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="HW_HANDOFF"/>
-      </File>
-      <File Name="hw_handoff\cordic_design_bd.tcl">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="HW_HANDOFF"/>
-      </File>
-      <File Name="hdl\cordic_design.hwdef">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="HW_HANDOFF"/>
       </File>
     </FileCollection>
   </CompositeFile>

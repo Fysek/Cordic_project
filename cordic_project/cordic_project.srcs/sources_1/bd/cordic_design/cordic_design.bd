@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0x3A3FB6CD1AD1CBD0" bd:device="xc7z020clg484-1" bd:isValidated="true" bd:synthFlowMode="Hierarchical" bd:tool_version="2016.4" bd:top="cordic_design" bd:version="1.00.a">
+<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0x3A3FB6CD1AD1CBD0" bd:device="xc7z020clg484-1" bd:synthFlowMode="Hierarchical" bd:tool_version="2016.4" bd:top="cordic_design" bd:version="1.00.a">
 
   <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
     <spirit:vendor>xilinx.com</spirit:vendor>
@@ -34,25 +34,25 @@
           </spirit:wire>
         </spirit:port>
         <spirit:port>
-          <spirit:name>ce_cordic</spirit:name>
-          <spirit:wire>
-            <spirit:direction>in</spirit:direction>
-          </spirit:wire>
-        </spirit:port>
-        <spirit:port>
           <spirit:name>note_en</spirit:name>
           <spirit:wire>
             <spirit:direction>in</spirit:direction>
           </spirit:wire>
         </spirit:port>
         <spirit:port>
-          <spirit:name>cos_out</spirit:name>
+          <spirit:name>note</spirit:name>
           <spirit:wire>
-            <spirit:direction>out</spirit:direction>
+            <spirit:direction>in</spirit:direction>
             <spirit:vector>
-              <spirit:left>15</spirit:left>
+              <spirit:left>7</spirit:left>
               <spirit:right>0</spirit:right>
             </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>ce_cordic</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
           </spirit:wire>
         </spirit:port>
         <spirit:port>
@@ -66,11 +66,11 @@
           </spirit:wire>
         </spirit:port>
         <spirit:port>
-          <spirit:name>note</spirit:name>
+          <spirit:name>cos_out</spirit:name>
           <spirit:wire>
-            <spirit:direction>in</spirit:direction>
+            <spirit:direction>out</spirit:direction>
             <spirit:vector>
-              <spirit:left>7</spirit:left>
+              <spirit:left>15</spirit:left>
               <spirit:right>0</spirit:right>
             </spirit:vector>
           </spirit:wire>
@@ -100,7 +100,7 @@
         <spirit:instanceName>cordic_inc_0</spirit:instanceName>
         <spirit:componentRef spirit:library="module_ref" spirit:name="cordic_inc" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">cordic_design_cordic_inc_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">cordic_design_cordic_inc_0_1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="bd:referenceName">cordic_inc</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="bd:subInstancePath"></spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="bd:referenceType">hdl</spirit:configurableElementValue>
@@ -134,8 +134,8 @@
         <spirit:name>Net</spirit:name>
         <spirit:externalPortReference spirit:portRef="clock"/>
         <spirit:internalPortReference spirit:componentRef="cordic_pipe_rtl_0" spirit:portRef="clock"/>
-        <spirit:internalPortReference spirit:componentRef="cordic_inc_0" spirit:portRef="clk"/>
-        <spirit:internalPortReference spirit:componentRef="cordic_trig_0" spirit:portRef="clk"/>
+        <spirit:internalPortReference spirit:componentRef="cordic_inc_0" spirit:portRef="clock"/>
+        <spirit:internalPortReference spirit:componentRef="cordic_trig_0" spirit:portRef="clock"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>Net1</spirit:name>
@@ -160,14 +160,14 @@
         <spirit:internalPortReference spirit:componentRef="cordic_inc_0" spirit:portRef="enable"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
+        <spirit:name>note_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="note"/>
+        <spirit:internalPortReference spirit:componentRef="cordic_inc_0" spirit:portRef="note"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
         <spirit:name>ce_cordic_1</spirit:name>
         <spirit:externalPortReference spirit:portRef="ce_cordic"/>
         <spirit:internalPortReference spirit:componentRef="cordic_pipe_rtl_0" spirit:portRef="ce"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>cordic_trig_0_cos_out</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="cordic_trig_0" spirit:portRef="cos_out"/>
-        <spirit:externalPortReference spirit:portRef="cos_out"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>cordic_trig_0_sin_out</spirit:name>
@@ -175,9 +175,9 @@
         <spirit:externalPortReference spirit:portRef="sin_out"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
-        <spirit:name>note_1</spirit:name>
-        <spirit:externalPortReference spirit:portRef="note"/>
-        <spirit:internalPortReference spirit:componentRef="cordic_inc_0" spirit:portRef="note"/>
+        <spirit:name>cordic_trig_0_cos_out</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="cordic_trig_0" spirit:portRef="cos_out"/>
+        <spirit:externalPortReference spirit:portRef="cos_out"/>
       </spirit:adHocConnection>
     </spirit:adHocConnections>
   </spirit:design>
