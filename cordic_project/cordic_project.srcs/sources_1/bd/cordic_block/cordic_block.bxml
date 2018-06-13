@@ -2,9 +2,9 @@
 <Root MajorVersion="0" MinorVersion="33">
   <CompositeFile CompositeFileTopName="cordic_block" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="RESET" Timestamp="1528919328"/>
-    <Generation Name="IMPLEMENTATION" State="RESET" Timestamp="1528919328"/>
-    <Generation Name="SIMULATION" State="RESET" Timestamp="1528919328"/>
+    <Generation Name="SYNTHESIS" State="RESET" Timestamp="1528922512"/>
+    <Generation Name="IMPLEMENTATION" State="RESET" Timestamp="1528922512"/>
+    <Generation Name="SIMULATION" State="RESET" Timestamp="1528922512"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\cordic_block_cordic_inc_0_0\cordic_block_cordic_inc_0_0.xci" Type="IP">
         <Instance HierarchyPath="cordic_inc_0"/>

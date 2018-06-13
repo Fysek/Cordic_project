@@ -20,6 +20,11 @@ reset <= 1'b1;
 #10 reset <= 1'b0;
 end
 
+initial
+begin
+reset <= 1'b1;
+#10 reset <= 1'b0;
+end
 
 //ce & clock generator stimuli
 initial
@@ -27,7 +32,6 @@ begin
 ce_cordic <= 1'b1;
 clock <= 1'b1;
 end
-
 
 always
 #5 clock <= ~clock;
@@ -41,7 +45,7 @@ always
     @(negedge reset); // wait for reset
     note = 8'd2;
     //repeat(256) @(posedge clock);
-    for(i = 0; i < 1024; i = i +1)
+    for(i = 0; i < 256; i = i +1)
     begin
         repeat(1) @(posedge clock);
         real_sin_out = sin_out / BIT_FXP;
@@ -51,7 +55,7 @@ always
     note = 8'd1; 
     //repeat(256) @(posedge clock);
     
-    for(i = 0; i < 1024; i = i +1)
+    for(i = 0; i < 256; i = i +1)
     begin
         repeat(1) @(posedge clock);
         real_sin_out = sin_out / BIT_FXP;

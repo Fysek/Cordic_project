@@ -3,11 +3,11 @@
 Jan 23 2017
 19:37:30
 D:/EiT - systemy wbudowane/IV rok/SDUP/projekt_sdup/Cordic_project/cordic_project/cordic_project.sim/sim_1/behav/glbl.v,1485222234,verilog,,,,glbl,,,,,,,,
-D:/EiT - systemy wbudowane/IV rok/SDUP/projekt_sdup/Cordic_project/cordic_project/cordic_project.srcs/sim_1/new/cordic_block_wrapper_tb.v,1528919224,verilog,,,,cordic_project_tb,,,,,,,,
+D:/EiT - systemy wbudowane/IV rok/SDUP/projekt_sdup/Cordic_project/cordic_project/cordic_project.srcs/sim_1/new/cordic_block_wrapper_tb.v,1528922661,verilog,,,,cordic_project_tb,,,,,,,,
 D:/EiT - systemy wbudowane/IV rok/SDUP/projekt_sdup/Cordic_project/cordic_project/cordic_project.srcs/sources_1/new/cordic_inc.v,1528898621,verilog,,,,cordic_inc,,,,,,,,
 D:/EiT - systemy wbudowane/IV rok/SDUP/projekt_sdup/Cordic_project/cordic_project/cordic_project.srcs/sources_1/new/cordic_pipe_rtl.v,1528917493,verilog,,,,cordic_pipe_rtl,,,,,,,,
 D:/EiT - systemy wbudowane/IV rok/SDUP/projekt_sdup/Cordic_project/cordic_project/cordic_project.srcs/sources_1/new/cordic_project.v,1528898621,verilog,,,,cordic_project,,,,,,,,
 D:/EiT - systemy wbudowane/IV rok/SDUP/projekt_sdup/Cordic_project/cordic_project/cordic_project.srcs/sources_1/new/cordic_step.v,1528898621,verilog,,,,cordic_step,,,,,,,,
-D:/EiT - systemy wbudowane/IV rok/SDUP/projekt_sdup/Cordic_project/cordic_project/cordic_project.srcs/sources_1/new/cordic_trig.v,1528919323,verilog,,,,cordic_trig,,,,,,,,
+D:/EiT - systemy wbudowane/IV rok/SDUP/projekt_sdup/Cordic_project/cordic_project/cordic_project.srcs/sources_1/new/cordic_trig.v,1528922505,verilog,,,,cordic_trig,,,,,,,,
 D:/EiT - systemy wbudowane/IV rok/SDUP/projekt_sdup/Cordic_project/cordic_project/cordic_project.srcs/sources_1/new/mode_pipe_latency.v,1528909366,verilog,,,,shift,,,,,,,,
 D:/EiT - systemy wbudowane/IV rok/SDUP/projekt_sdup/Cordic_project/cordic_project/cordic_project.srcs/sources_1/new/mul_Kn.v,1528917443,verilog,,,,mul_Kn,,,,,,,,

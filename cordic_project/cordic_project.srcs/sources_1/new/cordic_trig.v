@@ -16,11 +16,11 @@ module cordic_trig
 	endfunction
 	
 	function [15:0] negation_16(input [15:0] val16);
-            negation_16 = !val16 + 1;
+            negation_16 = ~val16 + 1;
         endfunction
 
-	wire [14:0] sin_trunc; 	
-	wire [14:0] cos_trunc; 
+	wire [15:0] sin_trunc; 	
+	wire [15:0] cos_trunc; 
     reg [4:0] valid_cnt;
 	reg signed [15:0] sin_vec; 	
 	reg signed [15:0] cos_vec; 

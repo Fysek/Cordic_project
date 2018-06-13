@@ -1,18 +1,12 @@
-Unable to capture context for thread 8644 in process 5888, can not generate back trace
-Unable to capture context for thread 1252 in process 5888, can not generate back trace
-Unable to capture context for thread 8544 in process 5888, can not generate back trace
-Unable to capture context for thread 8436 in process 5888, can not generate back trace
-Exception at PC 0x000007FEFD70A06D
-Exception at PC 0x000007FEFD70A06D
-Unable to capture context for thread 8768 in process 5888, can not generate back trace
-Unable to capture context for thread 8116 in process 5888, can not generate back trace
-Exception at PC 0x000007FEFD70A06D
-Unable to capture context for thread 8768 in process 5888, can not generate back trace
-Unable to capture context for thread 8116 in process 5888, can not generate back trace
-Exception at PC 0x000007FED7EEBB93
+Unable to capture context for thread 7796 in process 2208, can not generate back trace
+Exception at PC 0x000007FEB247BB93
 Printing stacktrace...
 
-Unable to capture context for thread 5564 in process 5888, can not generate back trace
+Unable to capture context for thread 8580 in process 2208, can not generate back trace
+Unable to capture context for thread 7796 in process 2208, can not generate back trace
+Exception at PC 0x000007FEFD70A06D
+Exception at PC 0x000007FEFD70A06D
+Unable to capture context for thread 4584 in process 2208, can not generate back trace
 Exception at PC 0x000007FEFD70A06D
 Exception at PC 0x000007FEFD70A06D
 Exception at PC 0x000007FEFD70A06D
@@ -24,18 +18,19 @@ Exception at PC 0x000007FEFD70A06D
 Exception at PC 0x000007FEFD70A06D
 Exception at PC 0x000007FEFD70A06D
 Exception at PC 0x000007FEFD70A06D
-[0]  [0x000007FED7EEBB93]
-[1]  [0x000007FED7EEBB93]
-[2]  [0x000007FED7EEB4A1]
-[3]  [0x000007FED7EEB3EF]
-[4]  [0x000007FED7ED19FE]
-[5]  [0x000007FED7ED0ED1]
-[6]  [0x000007FED7ED0D76]
-[7]  [0x000007FED7E779F6]
-[8]  [0x000007FED7E67AFB]
-[9]  [0x000007FED7F8E90A]
-[10]  [0x000007FED7FA9F87]
-[11]  [0x000007FED7FAA05F]
+Exception at PC 0x000007FEFD70A06D
+[0]  [0x000007FEB247BB93]
+[1]  [0x000007FEB247BB93]
+[2]  [0x000007FEB247B4A1]
+[3]  [0x000007FEB247B3EF]
+[4]  [0x000007FEB24619FE]
+[5]  [0x000007FEB2460ED1]
+[6]  [0x000007FEB2460D76]
+[7]  [0x000007FEB24079F6]
+[8]  [0x000007FEB23F7AFB]
+[9]  [0x000007FEB251E90A]
+[10]  [0x000007FEB2539F87]
+[11]  [0x000007FEB253A05F]
 [12] (BaseThreadInitThunk+0xd) [0x00000000775A59CD]
 [13] (RtlUserThreadStart+0x1d) [0x000000007780383D]
 Done
