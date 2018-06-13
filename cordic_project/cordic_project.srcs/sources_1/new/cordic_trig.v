@@ -9,30 +9,31 @@ module cordic_trig
     output   [15:0] cos_out 
 		
 );
-
+    parameter PIPE_LATENCY = 15;
 	function [14:0] trunc_18_to_15(input [17:0] val18);
 		trunc_18_to_15 = val18[14:0];
 	endfunction
 
 	wire [14:0] sin_trunc; 	
 	wire [14:0] cos_trunc; 
-
-	reg [17:0] sin_vec; 	
-	reg [17:0] cos_vec; 
+    reg [4:0] valid_cnt;
+	reg [15:0] sin_vec; 	
+	reg [15:0] cos_vec; 
 
 	assign sin_out = sin_vec;
 	assign cos_out = cos_vec;
 	assign sin_trunc = trunc_18_to_15(sin_in>>3);
 	assign cos_trunc = trunc_18_to_15(cos_in>>3);
+
 	
-    always @( posedge clock or posedge reset )
-		if(reset)
-			begin
+	always @( posedge clock or posedge reset )
+	   if(reset)
+	       begin
 				sin_vec <= 0;
 				cos_vec <= 0;
-			end
+		   end
 		else
-			begin
+		   begin                      
 				case (mode)
 					2'b00:
 					begin				
@@ -59,7 +60,10 @@ module cordic_trig
 						sin_vec <= {1'b0, sin_trunc};//positive
 						cos_vec <= {1'b0, cos_trunc};//positive
                     end 				
-				endcase				
+				endcase	
+				
+				
+							
 			end
 endmodule
 

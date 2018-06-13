@@ -1,0 +1,13 @@
+0.6
+2016.4
+Jan 23 2017
+19:37:30
+C:/Users/Fysek/Documents/projects/cordic/cordic_project/cordic_project.sim/sim_1/behav/glbl.v,1485222234,verilog,,,,glbl,,,,,,,,
+C:/Users/Fysek/Documents/projects/cordic/cordic_project/cordic_project.srcs/sim_1/new/cordic_block_wrapper_tb.v,1528855889,verilog,,,,cordic_project_tb,,,,,,,,
+C:/Users/Fysek/Documents/projects/cordic/cordic_project/cordic_project.srcs/sources_1/new/cordic_inc.v,1528855746,verilog,,,,cordic_inc,,,,,,,,
+C:/Users/Fysek/Documents/projects/cordic/cordic_project/cordic_project.srcs/sources_1/new/cordic_pipe_rtl.v,1528853891,verilog,,,,cordic_pipe_rtl,,,,,,,,
+C:/Users/Fysek/Documents/projects/cordic/cordic_project/cordic_project.srcs/sources_1/new/cordic_project.v,1528855439,verilog,,,,cordic_project,,,,,,,,
+C:/Users/Fysek/Documents/projects/cordic/cordic_project/cordic_project.srcs/sources_1/new/cordic_step.v,1528853905,verilog,,,,cordic_step,,,,,,,,
+C:/Users/Fysek/Documents/projects/cordic/cordic_project/cordic_project.srcs/sources_1/new/cordic_trig.v,1528853954,verilog,,,,cordic_trig,,,,,,,,
+C:/Users/Fysek/Documents/projects/cordic/cordic_project/cordic_project.srcs/sources_1/new/mode_pipe_latency.v,1528854740,verilog,,,,shift,,,,,,,,
+C:/Users/Fysek/Documents/projects/cordic/cordic_project/cordic_project.srcs/sources_1/new/mul_Kn.v,1528853940,verilog,,,,mul_Kn,,,,,,,,
