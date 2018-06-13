@@ -1,5 +1,5 @@
 @echo off
-set xv_path=D:\\Xilinx\\Vivado\\2016.4\\bin
+set xv_path=D:\\Programy\\Xilinx\\Vivado\\2016.4\\bin
 echo "xvlog -m64 --relax -prj cordic_project_tb_vlog.prj"
 call %xv_path%/xvlog  -m64 --relax -prj cordic_project_tb_vlog.prj -log xvlog.log
 call type xvlog.log > compile.log

@@ -17,8 +17,8 @@ module cordic_trig
 	wire [14:0] sin_trunc; 	
 	wire [14:0] cos_trunc; 
     reg [4:0] valid_cnt;
-	reg [15:0] sin_vec; 	
-	reg [15:0] cos_vec; 
+	reg signed [15:0] sin_vec; 	
+	reg signed [15:0] cos_vec; 
 
 	assign sin_out = sin_vec;
 	assign cos_out = cos_vec;

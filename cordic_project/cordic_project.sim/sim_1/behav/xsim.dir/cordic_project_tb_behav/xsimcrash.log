@@ -1,42 +1,47 @@
-Unable to capture context for thread 5412 in process 5112, can not generate back trace
-Unable to capture context for thread 4980 in process 5112, can not generate back trace
-Unable to capture context for thread 6832 in process 5112, can not generate back trace
-Unable to capture context for thread 2044 in process 5112, can not generate back trace
-Unable to capture context for thread 8280 in process 5112, can not generate back trace
-Exception at PC 0x00007FF8F1984008
-Unable to capture context for thread 6832 in process 5112, can not generate back trace
-Exception at PC 0x00007FF87A9EBB93
+Unable to capture context for thread 5848 in process 1712, can not generate back trace
+Unable to capture context for thread 4776 in process 1712, can not generate back trace
+Unable to capture context for thread 5192 in process 1712, can not generate back trace
+Unable to capture context for thread 6724 in process 1712, can not generate back trace
+Unable to capture context for thread 5564 in process 1712, can not generate back trace
+Exception at PC 0x000007FEFD70A06D
+Unable to capture context for thread 3564 in process 1712, can not generate back trace
+Exception at PC 0x000007FEFD70A06D
+Unable to capture context for thread 1104 in process 1712, can not generate back trace
+Unable to capture context for thread 3728 in process 1712, can not generate back trace
+Exception at PC 0x000007FEFD70A06D
+Unable to capture context for thread 1104 in process 1712, can not generate back trace
+Unable to capture context for thread 3728 in process 1712, can not generate back trace
+Exception at PC 0x000007FEB1BFBB93
 Printing stacktrace...
 
-Exception at PC 0x00007FF8F1984008
-Exception at PC 0x00007FF8F1984008
-Exception at PC 0x00007FF8F1984008
-Exception at PC 0x00007FF8F1984008
-Exception at PC 0x00007FF8F1984008
-Exception at PC 0x00007FF8F1984008
-Exception at PC 0x00007FF8F1984008
-Exception at PC 0x00007FF8F1984008
-Exception at PC 0x00007FF8F1984008
-Exception at PC 0x00007FF8F1984008
-Exception at PC 0x00007FF8F1984008
-Exception at PC 0x00007FF8F1984008
-Exception at PC 0x00007FF8F1984008
-Exception at PC 0x00007FF8F1984008
-Exception at PC 0x00007FF8F1984008
-Exception at PC 0x00007FF8F1984008
-Exception at PC 0x00007FF8F1984008
-[0]  [0x00007FF87A9EBB93]
-[1]  [0x00007FF87A9EBB93]
-[2]  [0x00007FF87A9EB4A1]
-[3]  [0x00007FF87A9EB3EF]
-[4]  [0x00007FF87A9D19FE]
-[5]  [0x00007FF87A9D0ED1]
-[6]  [0x00007FF87A9D0D76]
-[7]  [0x00007FF87A9779F6]
-[8]  [0x00007FF87A967AFB]
-[9]  [0x00007FF87AA8E90A]
-[10]  [0x00007FF87AAA9F87]
-[11]  [0x00007FF87AAAA05F]
-[12] (BaseThreadInitThunk+0x14) [0x00007FF8F2951FE4]
-[13] (RtlUserThreadStart+0x21) [0x00007FF8F54DF061]
+Exception at PC 0x000007FEFD70A06D
+Exception at PC 0x000007FEFD70A06D
+Unable to capture context for thread 7132 in process 1712, can not generate back trace
+Exception at PC 0x000007FEFD70A06D
+Exception at PC 0x000007FEFD70A06D
+Exception at PC 0x000007FEFD70A06D
+Exception at PC 0x000007FEFD70A06D
+Exception at PC 0x000007FEFD70A06D
+Exception at PC 0x000007FEFD70A06D
+Exception at PC 0x000007FEFD70A06D
+Exception at PC 0x000007FEFD70A06D
+Exception at PC 0x000007FEFD70A06D
+[0]  [0x000007FEB1BFBB93]
+[1]  [0x000007FEB1BFBB93]
+[2]  [0x000007FEB1BFB4A1]
+[3]  [0x000007FEB1BFB3EF]
+[4]  [0x000007FEB1BE19FE]
+[5]  [0x000007FEB1BE0ED1]
+[6]  [0x000007FEB1BE0D76]
+[7]  [0x000007FEB1B879F6]
+[8]  [0x000007FEB1B77AFB]
+[9]  [0x000007FEB1C9E90A]
+[10]  [0x000007FEB1CB9F87]
+[11]  [0x000007FEB1CBA05F]
+[12] (BaseThreadInitThunk+0xd) [0x00000000775A59CD]
+[13] (RtlUserThreadStart+0x1d) [0x000000007780383D]
 Done
+Exception at PC 0x000007FEFD70A06D
+Exception at PC 0x000007FEFD70A06D
+Exception at PC 0x000007FEFD70A06D
+Exception at PC 0x000007FEFD70A06D
