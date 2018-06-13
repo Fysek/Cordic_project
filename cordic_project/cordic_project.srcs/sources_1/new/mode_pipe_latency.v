@@ -5,14 +5,14 @@ module shift
   output [1:0]data_out
 );
 
-
-reg [29:0] holding_register;
+parameter PIPE_LATENCY = 20;
+reg [(PIPE_LATENCY*2)-1:0] holding_register;
 
 always @ (posedge clock)
  begin
-  holding_register <= {holding_register[27:0], data_in};
+  holding_register <= {holding_register[(PIPE_LATENCY*2)-3:0], data_in};
 end
 
-assign data_out = holding_register[29:28];
+assign data_out = holding_register[(PIPE_LATENCY*2)-1:(PIPE_LATENCY*2)-2];
 
 endmodule

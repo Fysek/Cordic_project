@@ -1,23 +1,18 @@
-Unable to capture context for thread 5848 in process 1712, can not generate back trace
-Unable to capture context for thread 4776 in process 1712, can not generate back trace
-Unable to capture context for thread 5192 in process 1712, can not generate back trace
-Unable to capture context for thread 6724 in process 1712, can not generate back trace
-Unable to capture context for thread 5564 in process 1712, can not generate back trace
+Unable to capture context for thread 8644 in process 5888, can not generate back trace
+Unable to capture context for thread 1252 in process 5888, can not generate back trace
+Unable to capture context for thread 8544 in process 5888, can not generate back trace
+Unable to capture context for thread 8436 in process 5888, can not generate back trace
 Exception at PC 0x000007FEFD70A06D
-Unable to capture context for thread 3564 in process 1712, can not generate back trace
 Exception at PC 0x000007FEFD70A06D
-Unable to capture context for thread 1104 in process 1712, can not generate back trace
-Unable to capture context for thread 3728 in process 1712, can not generate back trace
+Unable to capture context for thread 8768 in process 5888, can not generate back trace
+Unable to capture context for thread 8116 in process 5888, can not generate back trace
 Exception at PC 0x000007FEFD70A06D
-Unable to capture context for thread 1104 in process 1712, can not generate back trace
-Unable to capture context for thread 3728 in process 1712, can not generate back trace
-Exception at PC 0x000007FEB1BFBB93
+Unable to capture context for thread 8768 in process 5888, can not generate back trace
+Unable to capture context for thread 8116 in process 5888, can not generate back trace
+Exception at PC 0x000007FED7EEBB93
 Printing stacktrace...
 
-Exception at PC 0x000007FEFD70A06D
-Exception at PC 0x000007FEFD70A06D
-Unable to capture context for thread 7132 in process 1712, can not generate back trace
-Exception at PC 0x000007FEFD70A06D
+Unable to capture context for thread 5564 in process 5888, can not generate back trace
 Exception at PC 0x000007FEFD70A06D
 Exception at PC 0x000007FEFD70A06D
 Exception at PC 0x000007FEFD70A06D
@@ -26,18 +21,21 @@ Exception at PC 0x000007FEFD70A06D
 Exception at PC 0x000007FEFD70A06D
 Exception at PC 0x000007FEFD70A06D
 Exception at PC 0x000007FEFD70A06D
-[0]  [0x000007FEB1BFBB93]
-[1]  [0x000007FEB1BFBB93]
-[2]  [0x000007FEB1BFB4A1]
-[3]  [0x000007FEB1BFB3EF]
-[4]  [0x000007FEB1BE19FE]
-[5]  [0x000007FEB1BE0ED1]
-[6]  [0x000007FEB1BE0D76]
-[7]  [0x000007FEB1B879F6]
-[8]  [0x000007FEB1B77AFB]
-[9]  [0x000007FEB1C9E90A]
-[10]  [0x000007FEB1CB9F87]
-[11]  [0x000007FEB1CBA05F]
+Exception at PC 0x000007FEFD70A06D
+Exception at PC 0x000007FEFD70A06D
+Exception at PC 0x000007FEFD70A06D
+[0]  [0x000007FED7EEBB93]
+[1]  [0x000007FED7EEBB93]
+[2]  [0x000007FED7EEB4A1]
+[3]  [0x000007FED7EEB3EF]
+[4]  [0x000007FED7ED19FE]
+[5]  [0x000007FED7ED0ED1]
+[6]  [0x000007FED7ED0D76]
+[7]  [0x000007FED7E779F6]
+[8]  [0x000007FED7E67AFB]
+[9]  [0x000007FED7F8E90A]
+[10]  [0x000007FED7FA9F87]
+[11]  [0x000007FED7FAA05F]
 [12] (BaseThreadInitThunk+0xd) [0x00000000775A59CD]
 [13] (RtlUserThreadStart+0x1d) [0x000000007780383D]
 Done

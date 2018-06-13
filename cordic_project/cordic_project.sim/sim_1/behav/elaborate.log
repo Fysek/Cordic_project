@@ -23,6 +23,12 @@ Compiling module xil_defaultlib.cordic_step(step=7)
 Compiling module xil_defaultlib.cordic_step(step=8)
 Compiling module xil_defaultlib.cordic_step(step=9)
 Compiling module xil_defaultlib.cordic_step(step=10)
+Compiling module xil_defaultlib.cordic_step(step=11)
+Compiling module xil_defaultlib.cordic_step(step=12)
+Compiling module xil_defaultlib.cordic_step(step=13)
+Compiling module xil_defaultlib.cordic_step(step=14)
+Compiling module xil_defaultlib.cordic_step(step=15)
+Compiling module xil_defaultlib.cordic_step(step=16)
 Compiling module xil_defaultlib.mul_Kn
 Compiling module xil_defaultlib.cordic_pipe_rtl_default
 Compiling module xil_defaultlib.cordic_trig

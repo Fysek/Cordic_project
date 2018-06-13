@@ -30,7 +30,7 @@
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSABoardId" Val="zed"/>
     <Option Name="DSANumComputeUnits" Val="16"/>
-    <Option Name="WTXSimLaunchSim" Val="12"/>
+    <Option Name="WTXSimLaunchSim" Val="35"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -109,20 +109,19 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="cordic_block.bd" FileRelPathName="ip/cordic_block_shift_0_0/cordic_block_shift_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="cordic_block.bd" FileRelPathName="ip/cordic_block_cordic_pipe_rtl_0_0/cordic_block_cordic_pipe_rtl_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="cordic_block.bd" FileRelPathName="ip/cordic_block_cordic_inc_0_0/cordic_block_cordic_inc_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="cordic_block.bd" FileRelPathName="hdl/cordic_block.hwdef"/>
         <CompFileExtendedInfo CompFileName="cordic_block.bd" FileRelPathName="hw_handoff/cordic_block_bd.tcl"/>
         <CompFileExtendedInfo CompFileName="cordic_block.bd" FileRelPathName="hw_handoff/cordic_block.hwh"/>
         <CompFileExtendedInfo CompFileName="cordic_block.bd" FileRelPathName="cordic_block_ooc.xdc"/>
         <CompFileExtendedInfo CompFileName="cordic_block.bd" FileRelPathName="hdl/cordic_block.v"/>
         <CompFileExtendedInfo CompFileName="cordic_block.bd" FileRelPathName="ip/cordic_block_cordic_trig_0_0/cordic_block_cordic_trig_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="cordic_block.bd" FileRelPathName="cordic_block_cordic_inc_0_0.xml"/>
-        <CompFileExtendedInfo CompFileName="cordic_block.bd" FileRelPathName="cordic_block_cordic_trig_0_0.xml"/>
-        <CompFileExtendedInfo CompFileName="cordic_block.bd" FileRelPathName="sim/cordic_block_shift_0_0.v"/>
+        <CompFileExtendedInfo CompFileName="cordic_block.bd" FileRelPathName="ip/cordic_block_cordic_pipe_rtl_0_0/cordic_block_cordic_pipe_rtl_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="cordic_block.bd" FileRelPathName="ip/cordic_block_cordic_inc_0_0/cordic_block_cordic_inc_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="cordic_block.bd" FileRelPathName="ip/cordic_block_shift_0_0/cordic_block_shift_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="cordic_block.bd" FileRelPathName="cordic_block_cordic_pipe_rtl_0_0.xml"/>
         <CompFileExtendedInfo CompFileName="cordic_block.bd" FileRelPathName="cordic_block_shift_0_0.xml"/>
+        <CompFileExtendedInfo CompFileName="cordic_block.bd" FileRelPathName="cordic_block_cordic_inc_0_0.xml"/>
+        <CompFileExtendedInfo CompFileName="cordic_block.bd" FileRelPathName="cordic_block_cordic_trig_0_0.xml"/>
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
@@ -140,6 +139,14 @@
       <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sim_1/new/cordic_block_wrapper_tb.v">
         <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/new/cordic_pipe_tb.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
