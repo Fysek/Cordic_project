@@ -43,7 +43,7 @@ always
     note = 8'h56; // initial value
     note_en = 1'd1; // initial value
     @(negedge reset); // wait for reset
-    note = 8'd2;
+    note = 8'h46;
     //repeat(256) @(posedge clock);
     for(i = 0; i < 256; i = i +1)
     begin

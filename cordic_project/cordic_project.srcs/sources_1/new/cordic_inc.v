@@ -8,6 +8,7 @@ module cordic_inc
     output     [17:0] inc_value
 );
 
+    parameter MAX_INC = 102943;  //65536*1.57079632679
 	reg [17:0] inc_value_reg; 
     reg [17:0] inc_mode;
  
@@ -32,10 +33,10 @@ module cordic_inc
 				    begin
 				        sum = sum_i + lut[note];
 				        sum_i = sum;
-				        if (sum >= 51472)
+				        if (sum >= MAX_INC)
                             begin
                                 inc_mode <= inc_mode + 1;
-                                sum = sum - 51472;
+                                sum = sum - MAX_INC;
                                 sum_i = 0;
                             end       
 				    end

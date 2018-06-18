@@ -153,9 +153,21 @@
         </spirit:wire>
       </spirit:port>
     </spirit:ports>
+    <spirit:modelParameters>
+      <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
+        <spirit:name>MAX_INC</spirit:name>
+        <spirit:displayName>Max Inc</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.MAX_INC">102943</spirit:value>
+      </spirit:modelParameter>
+    </spirit:modelParameters>
   </spirit:model>
   <spirit:description>xilinx.com:module_ref:cordic_inc:1.0</spirit:description>
   <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>MAX_INC</spirit:name>
+      <spirit:displayName>Max Inc</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.MAX_INC">102943</spirit:value>
+    </spirit:parameter>
     <spirit:parameter>
       <spirit:name>Component_Name</spirit:name>
       <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">cordic_block_cordic_inc_0_0</spirit:value>

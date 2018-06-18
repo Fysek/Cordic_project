@@ -32,9 +32,9 @@ always
 	enable = 1'd1;
     note = 8'd1; // initial value
     @(negedge reset); // wait for reset
-    note = 8'd2;
+    note = 8'h46;
     repeat(256) @(posedge clock);
-    note = 8'd1; 
+    note = 8'h44; 
     repeat(256) @(posedge clock);
     $finish;
 
