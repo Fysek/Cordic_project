@@ -1,14 +1,17 @@
 Vivado Simulator 2016.4
 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: D:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 0aecafd859554668a564ceb947df98b1 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cordic_pipe_tb_behav xil_defaultlib.cordic_pipe_tb xil_defaultlib.glbl -log elaborate.log 
+Running: D:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 0aecafd859554668a564ceb947df98b1 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cordic_project_tb_behav xil_defaultlib.cordic_project_tb xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
 Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "C:/Users/Fysek/Documents/projects/cordic/cordic_project/cordic_project.srcs/sources_1/new/cordic_project.v" Line 12. Module cordic_project has a timescale but at least one module in design doesn't have timescale.
 WARNING: [XSIM 43-4100] "C:/Users/Fysek/Documents/projects/cordic/cordic_project/cordic_project.sim/sim_1/behav/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Fysek/Documents/projects/cordic/cordic_project/cordic_project.srcs/sources_1/new/cordic_project.v" Line 12. Module cordic_project has a timescale but at least one module in design doesn't have timescale.
 WARNING: [XSIM 43-4100] "C:/Users/Fysek/Documents/projects/cordic/cordic_project/cordic_project.sim/sim_1/behav/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.cordic_inc
 Compiling module xil_defaultlib.cordic_step
 Compiling module xil_defaultlib.cordic_step(step=1)
 Compiling module xil_defaultlib.cordic_step(step=2)
@@ -28,6 +31,9 @@ Compiling module xil_defaultlib.cordic_step(step=15)
 Compiling module xil_defaultlib.cordic_step(step=16)
 Compiling module xil_defaultlib.mul_Kn
 Compiling module xil_defaultlib.cordic_pipe_rtl_default
-Compiling module xil_defaultlib.cordic_pipe_tb
+Compiling module xil_defaultlib.cordic_trig
+Compiling module xil_defaultlib.shift
+Compiling module xil_defaultlib.cordic_project
+Compiling module xil_defaultlib.cordic_project_tb
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot cordic_pipe_tb_behav
+Built simulation snapshot cordic_project_tb_behav

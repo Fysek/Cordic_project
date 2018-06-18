@@ -5,7 +5,7 @@ module shift
   output [1:0]data_out
 );
 
-parameter PIPE_LATENCY = 20;
+parameter PIPE_LATENCY = 23;
 reg [(PIPE_LATENCY*2)-1:0] holding_register;
 
 always @ (posedge clock)

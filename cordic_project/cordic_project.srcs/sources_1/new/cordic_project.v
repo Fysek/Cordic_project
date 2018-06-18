@@ -16,7 +16,7 @@ module cordic_project
     note,
     note_en,
     reset,
-    sin_out);
+    sin_out);  
   input ce_cordic;
   input clock;
   output [15:0]cos_out;
