@@ -12,18 +12,22 @@
 module cordic_project
    (ce_cordic,
     clock,
-    cos_out,
     note,
     note_en,
     reset,
-    sin_out);  
+    sin_out,
+    cos_out,
+    angle_out,
+    mode_out);
   input ce_cordic;
   input clock;
-  output [15:0]cos_out;
   input [7:0]note;
   input note_en;
   input reset;
   output [15:0]sin_out;
+  output [15:0]cos_out;
+  output [17:0]angle_out;
+  output [1:0]mode_out;
 
   wire Net;
   wire Net1;
@@ -45,6 +49,8 @@ module cordic_project
   assign note_1 = note[7:0];
   assign note_en_1 = note_en;
   assign sin_out[15:0] = cordic_trig_0_sin_out;
+  assign angle_out[17:0] = cordic_inc_0_inc_value;
+  assign mode_out[1:0] = cordic_inc_0_mode;
   cordic_inc cordic_inc_0
        (.clock(Net),
         .enable(note_en_1),

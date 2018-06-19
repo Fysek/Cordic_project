@@ -1,14 +1,14 @@
 Vivado Simulator 2016.4
 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: D:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 0aecafd859554668a564ceb947df98b1 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cordic_project_tb_behav xil_defaultlib.cordic_project_tb xil_defaultlib.glbl -log elaborate.log 
+Running: D:/Programy/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 0aecafd859554668a564ceb947df98b1 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cordic_project_tb_behav xil_defaultlib.cordic_project_tb xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
 Starting simulation data flow analysis
-WARNING: [XSIM 43-4100] "C:/Users/Fysek/Documents/projects/cordic/cordic_project/cordic_project.srcs/sources_1/new/cordic_project.v" Line 12. Module cordic_project has a timescale but at least one module in design doesn't have timescale.
-WARNING: [XSIM 43-4100] "C:/Users/Fysek/Documents/projects/cordic/cordic_project/cordic_project.sim/sim_1/behav/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
-WARNING: [XSIM 43-4100] "C:/Users/Fysek/Documents/projects/cordic/cordic_project/cordic_project.srcs/sources_1/new/cordic_project.v" Line 12. Module cordic_project has a timescale but at least one module in design doesn't have timescale.
-WARNING: [XSIM 43-4100] "C:/Users/Fysek/Documents/projects/cordic/cordic_project/cordic_project.sim/sim_1/behav/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "D:/EiT - systemy wbudowane/IV rok/SDUP/projekt_sdup/Cordic_project/cordic_project/cordic_project.srcs/sources_1/new/cordic_project.v" Line 12. Module cordic_project has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "D:/EiT - systemy wbudowane/IV rok/SDUP/projekt_sdup/Cordic_project/cordic_project/cordic_project.sim/sim_1/behav/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "D:/EiT - systemy wbudowane/IV rok/SDUP/projekt_sdup/Cordic_project/cordic_project/cordic_project.srcs/sources_1/new/cordic_project.v" Line 12. Module cordic_project has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "D:/EiT - systemy wbudowane/IV rok/SDUP/projekt_sdup/Cordic_project/cordic_project/cordic_project.sim/sim_1/behav/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.cordic_inc
