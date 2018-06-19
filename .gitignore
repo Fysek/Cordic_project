@@ -143,5 +143,9 @@
 #C-files
 #########
 
+#Dont ignore cpp and txt files
+!*.cpp
+!*.txt
+
 
 # End of https://www.gitignore.io/api/vivado,xilinxvivado
