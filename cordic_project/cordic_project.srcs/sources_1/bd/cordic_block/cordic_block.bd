@@ -108,22 +108,22 @@
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
-        <spirit:instanceName>cordic_inc_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="module_ref" spirit:name="cordic_inc" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:instanceName>shift_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="module_ref" spirit:name="shift" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">cordic_block_cordic_inc_0_0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="bd:referenceName">cordic_inc</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">cordic_block_shift_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceName">shift</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="bd:subInstancePath"></spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="bd:referenceType">hdl</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="bd:BoundaryCRC">0x0</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
-        <spirit:instanceName>shift_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="module_ref" spirit:name="shift" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:instanceName>cordic_inc_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="module_ref" spirit:name="cordic_inc" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">cordic_block_shift_0_0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="bd:referenceName">shift</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">cordic_block_cordic_inc_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceName">cordic_inc</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="bd:subInstancePath"></spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="bd:referenceType">hdl</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="bd:BoundaryCRC">0x0</spirit:configurableElementValue>
@@ -141,8 +141,8 @@
         <spirit:externalPortReference spirit:portRef="clock"/>
         <spirit:internalPortReference spirit:componentRef="cordic_pipe_rtl_0" spirit:portRef="clock"/>
         <spirit:internalPortReference spirit:componentRef="cordic_trig_0" spirit:portRef="clock"/>
-        <spirit:internalPortReference spirit:componentRef="cordic_inc_0" spirit:portRef="clock"/>
         <spirit:internalPortReference spirit:componentRef="shift_0" spirit:portRef="clock"/>
+        <spirit:internalPortReference spirit:componentRef="cordic_inc_0" spirit:portRef="clock"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>Net1</spirit:name>

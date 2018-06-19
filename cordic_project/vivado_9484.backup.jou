@@ -2,31 +2,13 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Thu Jun 14 23:22:54 2018
-# Process ID: 3932
+# Start of session at: Tue Jun 19 21:55:08 2018
+# Process ID: 9484
 # Current directory: C:/Users/Fysek/Documents/projects/cordic/cordic_project
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4852 C:\Users\Fysek\Documents\projects\cordic\cordic_project\cordic_project.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7812 C:\Users\Fysek\Documents\projects\cordic\cordic_project\cordic_project.xpr
 # Log file: C:/Users/Fysek/Documents/projects/cordic/cordic_project/vivado.log
 # Journal file: C:/Users/Fysek/Documents/projects/cordic/cordic_project\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/Fysek/Documents/projects/cordic/cordic_project/cordic_project.xpr
-launch_simulation
-source cordic_project_tb.tcl
-close_sim
-launch_simulation
-source cordic_project_tb.tcl
-close_sim
-launch_simulation
-source cordic_project_tb.tcl
-restart
-run 4000 ns
-close_sim
-update_module_reference cordic_block_shift_0_0
-launch_simulation
-source cordic_project_tb.tcl
-restart
-run 4000 ns
-restart
-run 4000 ns
-close_sim
+remove_files  C:/Users/Fysek/Documents/projects/cordic/cordic_project/cordic_project.srcs/sources_1/bd/cordic_synth_design/cordic_synth_design.bd
