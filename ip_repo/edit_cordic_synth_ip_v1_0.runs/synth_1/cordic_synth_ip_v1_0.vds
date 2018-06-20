@@ -1,0 +1,914 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Jun 20 08:49:57 2018
+# Process ID: 6380
+# Current directory: C:/Users/Fysek/Documents/projects/cordic/ip_repo/edit_cordic_synth_ip_v1_0.runs/synth_1
+# Command line: vivado.exe -log cordic_synth_ip_v1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cordic_synth_ip_v1_0.tcl
+# Log file: C:/Users/Fysek/Documents/projects/cordic/ip_repo/edit_cordic_synth_ip_v1_0.runs/synth_1/cordic_synth_ip_v1_0.vds
+# Journal file: C:/Users/Fysek/Documents/projects/cordic/ip_repo/edit_cordic_synth_ip_v1_0.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source cordic_synth_ip_v1_0.tcl -notrace
+Command: synth_design -top cordic_synth_ip_v1_0 -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11836 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 324.832 ; gain = 114.551
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'cordic_synth_ip_v1_0' [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_synth_ip_v1_0.v:4]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'cordic_synth_ip_v1_0_S00_AXI' [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_synth_ip_v1_0_S00_AXI.v:4]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_synth_ip_v1_0_S00_AXI.v:223]
+INFO: [Synth 8-226] default block is never used [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_synth_ip_v1_0_S00_AXI.v:364]
+INFO: [Synth 8-638] synthesizing module 'cordic_project' [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_project.v:12]
+INFO: [Synth 8-638] synthesizing module 'cordic_inc' [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_inc.v:1]
+	Parameter MAX_INC bound to: 102943 - type: integer 
+
+Warning: Trying to implement RAM in registers. Block RAM or DRAM implementation is not possible for one or more of the following reasons :
+	1: RAM read is not driven by RAM register. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+INFO: [Synth 8-256] done synthesizing module 'cordic_inc' (1#1) [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_inc.v:1]
+INFO: [Synth 8-638] synthesizing module 'cordic_pipe_rtl' [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_pipe_rtl.v:5]
+	Parameter W bound to: 18 - type: integer 
+	Parameter ITER bound to: 17 - type: integer 
+	Parameter FXP_MUL bound to: 65536 - type: integer 
+	Parameter PIPE_LATENCY bound to: 21 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'cordic_step' [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:6]
+	Parameter step bound to: 0 - type: integer 
+	Parameter W bound to: 18 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cordic_step' (2#1) [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:6]
+INFO: [Synth 8-638] synthesizing module 'cordic_step__parameterized0' [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:6]
+	Parameter step bound to: 1 - type: integer 
+	Parameter W bound to: 18 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cordic_step__parameterized0' (2#1) [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:6]
+INFO: [Synth 8-638] synthesizing module 'cordic_step__parameterized1' [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:6]
+	Parameter step bound to: 2 - type: integer 
+	Parameter W bound to: 18 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cordic_step__parameterized1' (2#1) [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:6]
+INFO: [Synth 8-638] synthesizing module 'cordic_step__parameterized2' [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:6]
+	Parameter step bound to: 3 - type: integer 
+	Parameter W bound to: 18 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cordic_step__parameterized2' (2#1) [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:6]
+INFO: [Synth 8-638] synthesizing module 'cordic_step__parameterized3' [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:6]
+	Parameter step bound to: 4 - type: integer 
+	Parameter W bound to: 18 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cordic_step__parameterized3' (2#1) [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:6]
+INFO: [Synth 8-638] synthesizing module 'cordic_step__parameterized4' [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:6]
+	Parameter step bound to: 5 - type: integer 
+	Parameter W bound to: 18 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cordic_step__parameterized4' (2#1) [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:6]
+INFO: [Synth 8-638] synthesizing module 'cordic_step__parameterized5' [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:6]
+	Parameter step bound to: 6 - type: integer 
+	Parameter W bound to: 18 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cordic_step__parameterized5' (2#1) [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:6]
+INFO: [Synth 8-638] synthesizing module 'cordic_step__parameterized6' [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:6]
+	Parameter step bound to: 7 - type: integer 
+	Parameter W bound to: 18 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cordic_step__parameterized6' (2#1) [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:6]
+INFO: [Synth 8-638] synthesizing module 'cordic_step__parameterized7' [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:6]
+	Parameter step bound to: 8 - type: integer 
+	Parameter W bound to: 18 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cordic_step__parameterized7' (2#1) [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:6]
+INFO: [Synth 8-638] synthesizing module 'cordic_step__parameterized8' [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:6]
+	Parameter step bound to: 9 - type: integer 
+	Parameter W bound to: 18 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cordic_step__parameterized8' (2#1) [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:6]
+INFO: [Synth 8-638] synthesizing module 'cordic_step__parameterized9' [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:6]
+	Parameter step bound to: 10 - type: integer 
+	Parameter W bound to: 18 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cordic_step__parameterized9' (2#1) [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:6]
+INFO: [Synth 8-638] synthesizing module 'cordic_step__parameterized10' [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:6]
+	Parameter step bound to: 11 - type: integer 
+	Parameter W bound to: 18 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cordic_step__parameterized10' (2#1) [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:6]
+INFO: [Synth 8-638] synthesizing module 'cordic_step__parameterized11' [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:6]
+	Parameter step bound to: 12 - type: integer 
+	Parameter W bound to: 18 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cordic_step__parameterized11' (2#1) [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:6]
+INFO: [Synth 8-638] synthesizing module 'cordic_step__parameterized12' [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:6]
+	Parameter step bound to: 13 - type: integer 
+	Parameter W bound to: 18 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cordic_step__parameterized12' (2#1) [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:6]
+INFO: [Synth 8-638] synthesizing module 'cordic_step__parameterized13' [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:6]
+	Parameter step bound to: 14 - type: integer 
+	Parameter W bound to: 18 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cordic_step__parameterized13' (2#1) [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:6]
+INFO: [Synth 8-638] synthesizing module 'cordic_step__parameterized14' [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:6]
+	Parameter step bound to: 15 - type: integer 
+	Parameter W bound to: 18 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cordic_step__parameterized14' (2#1) [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:6]
+INFO: [Synth 8-638] synthesizing module 'cordic_step__parameterized15' [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:6]
+	Parameter step bound to: 16 - type: integer 
+	Parameter W bound to: 18 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cordic_step__parameterized15' (2#1) [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:6]
+INFO: [Synth 8-638] synthesizing module 'mul_Kn' [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/mul_Kn.v:6]
+	Parameter W bound to: 18 - type: integer 
+	Parameter FXP_SHIFT bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mul_Kn' (3#1) [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/mul_Kn.v:6]
+INFO: [Synth 8-256] done synthesizing module 'cordic_pipe_rtl' (4#1) [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_pipe_rtl.v:5]
+INFO: [Synth 8-638] synthesizing module 'cordic_trig' [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_trig.v:1]
+	Parameter PIPE_LATENCY bound to: 20 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_trig.v:42]
+INFO: [Synth 8-256] done synthesizing module 'cordic_trig' (5#1) [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_trig.v:1]
+INFO: [Synth 8-638] synthesizing module 'shift' [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/mode_pipe_latency.v:1]
+	Parameter PIPE_LATENCY bound to: 23 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'shift' (6#1) [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/mode_pipe_latency.v:1]
+INFO: [Synth 8-256] done synthesizing module 'cordic_project' (7#1) [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_project.v:12]
+INFO: [Synth 8-256] done synthesizing module 'cordic_synth_ip_v1_0_S00_AXI' (8#1) [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_synth_ip_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-256] done synthesizing module 'cordic_synth_ip_v1_0' (9#1) [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_synth_ip_v1_0.v:4]
+WARNING: [Synth 8-3331] design cordic_pipe_rtl has unconnected port reset
+WARNING: [Synth 8-3331] design cordic_inc has unconnected port note[7]
+WARNING: [Synth 8-3331] design cordic_synth_ip_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design cordic_synth_ip_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design cordic_synth_ip_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design cordic_synth_ip_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design cordic_synth_ip_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design cordic_synth_ip_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 362.004 ; gain = 151.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 362.004 ; gain = 151.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 362.004 ; gain = 151.723
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:18]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:18]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:18]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:18]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:18]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:18]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:18]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:18]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:18]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:18]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:18]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:18]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:18]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:18]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:18]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:18]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:18]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:18]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:18]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:18]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:18]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:18]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:18]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:18]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:18]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:18]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:18]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:18]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:18]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:18]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:18]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:18]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:18]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:18]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:18]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:18]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:18]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:18]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:18]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:18]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:18]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:18]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:18]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:18]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:18]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:18]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:18]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:18]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Fysek/Documents/projects/cordic/ip_repo/cordic_synth_ip_1.0/hdl/cordic_step.v:18]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 410.906 ; gain = 200.625
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     36 Bit       Adders := 12    
+	   2 Input     36 Bit       Adders := 10    
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     18 Bit       Adders := 51    
+	   2 Input     18 Bit       Adders := 1     
++---Registers : 
+	               46 Bit    Registers := 1     
+	               36 Bit    Registers := 46    
+	               32 Bit    Registers := 7     
+	               18 Bit    Registers := 72    
+	               16 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input     18 Bit        Muxes := 51    
+	   4 Input     16 Bit        Muxes := 2     
+	 128 Input      7 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module cordic_inc 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	 128 Input      7 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module mul_Kn 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     36 Bit       Adders := 6     
+	   2 Input     36 Bit       Adders := 5     
++---Registers : 
+	               36 Bit    Registers := 23    
+	               18 Bit    Registers := 2     
+Module cordic_step 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     18 Bit       Adders := 3     
+	   2 Input     18 Bit       Adders := 1     
++---Registers : 
+	               18 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 3     
+Module cordic_step__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     18 Bit       Adders := 3     
++---Registers : 
+	               18 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 3     
+Module cordic_step__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     18 Bit       Adders := 3     
++---Registers : 
+	               18 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 3     
+Module cordic_step__parameterized2 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     18 Bit       Adders := 3     
++---Registers : 
+	               18 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 3     
+Module cordic_step__parameterized3 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     18 Bit       Adders := 3     
++---Registers : 
+	               18 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 3     
+Module cordic_step__parameterized4 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     18 Bit       Adders := 3     
++---Registers : 
+	               18 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 3     
+Module cordic_step__parameterized5 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     18 Bit       Adders := 3     
++---Registers : 
+	               18 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 3     
+Module cordic_step__parameterized6 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     18 Bit       Adders := 3     
++---Registers : 
+	               18 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 3     
+Module cordic_step__parameterized7 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     18 Bit       Adders := 3     
++---Registers : 
+	               18 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 3     
+Module cordic_step__parameterized8 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     18 Bit       Adders := 3     
++---Registers : 
+	               18 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 3     
+Module cordic_step__parameterized9 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     18 Bit       Adders := 3     
++---Registers : 
+	               18 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 3     
+Module cordic_step__parameterized10 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     18 Bit       Adders := 3     
++---Registers : 
+	               18 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 3     
+Module cordic_step__parameterized11 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     18 Bit       Adders := 3     
++---Registers : 
+	               18 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 3     
+Module cordic_step__parameterized12 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     18 Bit       Adders := 3     
++---Registers : 
+	               18 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 3     
+Module cordic_step__parameterized13 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     18 Bit       Adders := 3     
++---Registers : 
+	               18 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 3     
+Module cordic_step__parameterized14 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     18 Bit       Adders := 3     
++---Registers : 
+	               18 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 3     
+Module cordic_step__parameterized15 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     18 Bit       Adders := 3     
++---Registers : 
+	               18 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 3     
+Module cordic_trig 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 2     
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 2     
+Module shift 
+Detailed RTL Component Info : 
++---Registers : 
+	               46 Bit    Registers := 1     
+Module cordic_synth_ip_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design cordic_pipe_rtl has unconnected port reset
+WARNING: [Synth 8-3331] design cordic_synth_ip_v1_0 has unconnected port s00_axi_awprot[2]
+WARNING: [Synth 8-3331] design cordic_synth_ip_v1_0 has unconnected port s00_axi_awprot[1]
+WARNING: [Synth 8-3331] design cordic_synth_ip_v1_0 has unconnected port s00_axi_awprot[0]
+WARNING: [Synth 8-3331] design cordic_synth_ip_v1_0 has unconnected port s00_axi_arprot[2]
+WARNING: [Synth 8-3331] design cordic_synth_ip_v1_0 has unconnected port s00_axi_arprot[1]
+WARNING: [Synth 8-3331] design cordic_synth_ip_v1_0 has unconnected port s00_axi_arprot[0]
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/shift_0/holding_register_reg[0]' (FD) to 'cordic_synth_ip_v1_0_S00_AXI_inst/slv_reg3_reg[18]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/cos_out_reg[1]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/cos_out_reg[2]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/cos_out_reg[2]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/cos_out_reg[3]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/sin_out_reg[1]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/sin_out_reg[2]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/cos_out_reg[3]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/cos_out_reg[4]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/sin_out_reg[2]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/sin_out_reg[3]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/cos_out_reg[4]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/cos_out_reg[5]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/sin_out_reg[3]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/sin_out_reg[4]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/cos_out_reg[5]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/cos_out_reg[6]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/sin_out_reg[4]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/sin_out_reg[5]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/cos_out_reg[6]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/cos_out_reg[7]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/sin_out_reg[5]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/sin_out_reg[6]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/cos_out_reg[7]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/cos_out_reg[8]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/sin_out_reg[6]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/sin_out_reg[7]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/cos_out_reg[8]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/cos_out_reg[9]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/sin_out_reg[7]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/sin_out_reg[8]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/cos_out_reg[9]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/cos_out_reg[10]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/sin_out_reg[8]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/sin_out_reg[9]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/cos_out_reg[10]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/cos_out_reg[11]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/sin_out_reg[9]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/sin_out_reg[10]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/cos_out_reg[11]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/cos_out_reg[12]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/sin_out_reg[10]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/sin_out_reg[11]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/cos_out_reg[12]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/cos_out_reg[13]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/sin_out_reg[11]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/sin_out_reg[12]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/cos_out_reg[13]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/cos_out_reg[14]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/sin_out_reg[12]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/sin_out_reg[13]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/cos_out_reg[14]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/cos_out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/sin_out_reg[13]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/sin_out_reg[14]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/sin_out_reg[14]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/sin_out_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/angle_out_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/angle_out_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/angle_out_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/angle_out_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/angle_out_reg[4] )
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/angle_out_reg[5]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/angle_out_reg[6]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/angle_out_reg[6]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/angle_out_reg[7]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/angle_out_reg[7]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/angle_out_reg[9]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/angle_out_reg[8]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/angle_out_reg[11]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/angle_out_reg[9]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/angle_out_reg[10]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/angle_out_reg[10]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/angle_out_reg[12]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/angle_out_reg[11]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/angle_out_reg[14]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/angle_out_reg[12]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/angle_out_reg[13]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/angle_out_reg[13]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/angle_out_reg[16]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/angle_out_reg[14]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/angle_out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/angle_out_reg[16]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/angle_out_reg[17]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/angle_out_reg[17]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/sin_out_reg[17]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/cordic_step_loop[0].cordic_step_1/cos_out_reg[17] )
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/shift_0/holding_register_reg[1]' (FD) to 'cordic_synth_ip_v1_0_S00_AXI_inst/slv_reg3_reg[19]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[0] )
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_0_reg[0]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_3_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_2_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_7_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_4_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_10_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_8_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_13_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_11_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_16_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_15_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_cos/val_1_reg[0] )
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_cos/val_0_reg[0]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_cos/val_1_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_cos/val_3_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_cos/val_2_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_cos/val_7_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_cos/val_4_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_cos/val_10_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_cos/val_8_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_cos/val_13_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_cos/val_11_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_cos/val_16_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_cos/val_15_reg[0] )
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[1]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_3_reg[3]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_0_reg[1]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[2]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[2]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_3_reg[4]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_0_reg[2]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[3]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_3_reg[5]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_0_reg[3]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[4]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[4]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_3_reg[6]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_0_reg[4]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[5]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[5]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_3_reg[7]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_0_reg[5]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[6]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[6]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_3_reg[8]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_0_reg[6]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[7]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_3_reg[9]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_0_reg[7]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[8]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_3_reg[10]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_0_reg[8]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[9]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[9]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_3_reg[11]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_0_reg[9]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[10]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[10]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_3_reg[12]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_0_reg[10]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[11]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[11]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_3_reg[13]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_0_reg[11]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[12]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[12]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_3_reg[14]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_0_reg[12]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[13]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[13]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_3_reg[15]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_0_reg[13]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[14]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[14]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_3_reg[16]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_0_reg[14]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[15]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[15]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_3_reg[17]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_0_reg[15]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[16]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[16]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_3_reg[18]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_0_reg[16]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[17]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[17]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_3_reg[19]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_0_reg[17]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[18]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[34]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[18]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[35]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[18]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_3_reg[34]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[18]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_3_reg[35]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[18]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_2_reg[34]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[18]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_2_reg[35]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[18]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_7_reg[34]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[18]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_7_reg[35]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[18]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_4_reg[34]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[18]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_4_reg[35]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[18]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_10_reg[34]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[18]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_10_reg[35]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[18]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_8_reg[34]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[18]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_8_reg[35]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[18]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_13_reg[34]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[18]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_13_reg[35]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[18]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_11_reg[34]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[18]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_11_reg[35]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[18]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_16_reg[34]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[18]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_16_reg[35]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[18]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_15_reg[34]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[18]'
+INFO: [Synth 8-3886] merging instance 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_15_reg[35]' (FDE) to 'cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_1_reg[18]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_3_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_2_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_3_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_7_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_4_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_7_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_4_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_7_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_4_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_7_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_7_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_7_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_10_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_8_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_10_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_8_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_10_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_8_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_10_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_8_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_10_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_8_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_10_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_8_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_10_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_8_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_10_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_10_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_13_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_11_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_13_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_11_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_13_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_11_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_13_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_11_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_13_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_11_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_13_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_11_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_13_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_11_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_13_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_11_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_13_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_11_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_13_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_11_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_13_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_13_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_16_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_15_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_16_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_15_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_16_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_15_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_16_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_15_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_16_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_15_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_16_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_15_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_16_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_15_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_16_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_15_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_16_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_15_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_16_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_15_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_16_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_15_reg[11] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_15_reg[14]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_15_reg[13]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_15_reg[12]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_15_reg[11]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_15_reg[10]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_15_reg[9]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_15_reg[8]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_15_reg[7]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_15_reg[6]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_15_reg[5]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_15_reg[4]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_15_reg[3]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_15_reg[2]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_15_reg[1]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_15_reg[0]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_16_reg[15]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_16_reg[14]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_16_reg[13]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_16_reg[12]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_16_reg[11]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_16_reg[10]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_16_reg[9]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_16_reg[8]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_16_reg[7]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_16_reg[6]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_16_reg[5]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_16_reg[4]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_16_reg[3]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_16_reg[2]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_16_reg[1]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_16_reg[0]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_16_15_reg[35]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_16_15_reg[34]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_11_reg[10]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_11_reg[9]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_11_reg[8]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_11_reg[7]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_11_reg[6]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_11_reg[5]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_11_reg[4]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_11_reg[3]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_11_reg[2]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_11_reg[1]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_11_reg[0]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_13_reg[12]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_13_reg[11]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_13_reg[10]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_13_reg[9]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_13_reg[8]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_13_reg[7]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_13_reg[6]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_13_reg[5]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_13_reg[4]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_13_reg[3]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_13_reg[2]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_13_reg[1]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_13_reg[0]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_13_11_reg[35]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_13_11_reg[34]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_11_13_15_16_reg[35]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_11_13_15_16_reg[34]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_11_13_15_16d_reg[35]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_11_13_15_16d_reg[34]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_8_reg[7]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_8_reg[6]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_8_reg[5]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_8_reg[4]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_8_reg[3]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_8_reg[2]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_8_reg[1]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_8_reg[0]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_10_reg[9]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_10_reg[8]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_10_reg[7]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_10_reg[6]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_10_reg[5]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_10_reg[4]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_10_reg[3]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_10_reg[2]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_10_reg[1]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_10_reg[0]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_10_8_reg[35]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_10_8_reg[34]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_4_reg[3]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_4_reg[2]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_4_reg[1]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_4_reg[0]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_7_reg[6]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_7_reg[5]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_7_reg[4]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_7_reg[3]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_7_reg[2]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_7_reg[1]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_7_reg[0]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_7_4_reg[35]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_7_4_reg[34]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_4_7_8_10_reg[35]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_4_7_8_10_reg[34]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_2_reg[1]) is unused and will be removed from module cordic_synth_ip_v1_0.
+WARNING: [Synth 8-3332] Sequential element (cordic_synth_ip_v1_0_S00_AXI_inst/cordic_project_inst/cordic_pipe_rtl_0/mul_Kn_sin/val_2_reg[0]) is unused and will be removed from module cordic_synth_ip_v1_0.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 531.766 ; gain = 321.484
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 531.766 ; gain = 321.484
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 532.844 ; gain = 322.563
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 532.844 ; gain = 322.563
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 532.844 ; gain = 322.563
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 532.844 ; gain = 322.563
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 532.844 ; gain = 322.563
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 532.844 ; gain = 322.563
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 532.844 ; gain = 322.563
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |   288|
+|3     |LUT1   |    60|
+|4     |LUT2   |   977|
+|5     |LUT3   |     3|
+|6     |LUT4   |    38|
+|7     |LUT6   |     1|
+|8     |FDCE   |    32|
+|9     |FDRE   |  1244|
+|10    |IBUF   |    47|
+|11    |OBUF   |    41|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------------------------------------+-----------------------------+------+
+|      |Instance                                     |Module                       |Cells |
++------+---------------------------------------------+-----------------------------+------+
+|1     |top                                          |                             |  2732|
+|2     |  cordic_synth_ip_v1_0_S00_AXI_inst          |cordic_synth_ip_v1_0_S00_AXI |  2643|
+|3     |    cordic_project_inst                      |cordic_project               |  2495|
+|4     |      cordic_pipe_rtl_0                      |cordic_pipe_rtl              |  2462|
+|5     |        \cordic_step_loop[10].cordic_step_1  |cordic_step__parameterized9  |    84|
+|6     |        \cordic_step_loop[11].cordic_step_1  |cordic_step__parameterized10 |    84|
+|7     |        \cordic_step_loop[12].cordic_step_1  |cordic_step__parameterized11 |    84|
+|8     |        \cordic_step_loop[13].cordic_step_1  |cordic_step__parameterized12 |    84|
+|9     |        \cordic_step_loop[14].cordic_step_1  |cordic_step__parameterized13 |    84|
+|10    |        \cordic_step_loop[15].cordic_step_1  |cordic_step__parameterized14 |    84|
+|11    |        \cordic_step_loop[16].cordic_step_1  |cordic_step__parameterized15 |    46|
+|12    |        \cordic_step_loop[3].cordic_step_1   |cordic_step__parameterized2  |    23|
+|13    |        \cordic_step_loop[4].cordic_step_1   |cordic_step__parameterized3  |    73|
+|14    |        \cordic_step_loop[5].cordic_step_1   |cordic_step__parameterized4  |    84|
+|15    |        \cordic_step_loop[6].cordic_step_1   |cordic_step__parameterized5  |    84|
+|16    |        \cordic_step_loop[7].cordic_step_1   |cordic_step__parameterized6  |    84|
+|17    |        \cordic_step_loop[8].cordic_step_1   |cordic_step__parameterized7  |    84|
+|18    |        \cordic_step_loop[9].cordic_step_1   |cordic_step__parameterized8  |    84|
+|19    |        mul_Kn_cos                           |mul_Kn                       |   698|
+|20    |        mul_Kn_sin                           |mul_Kn_0                     |   698|
+|21    |      cordic_trig_0                          |cordic_trig                  |    33|
++------+---------------------------------------------+-----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 532.844 ; gain = 322.563
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1128 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 532.844 ; gain = 283.004
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 532.844 ; gain = 322.563
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 335 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+323 Infos, 115 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 599.773 ; gain = 359.316
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Fysek/Documents/projects/cordic/ip_repo/edit_cordic_synth_ip_v1_0.runs/synth_1/cordic_synth_ip_v1_0.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 599.773 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 20 08:50:17 2018...

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Jun 20 08:59:11 2018
+# Process ID: 6460
+# Current directory: C:/Users/Fysek/Documents/projects/cordic/cordic_synth/cordic_synth.runs/synth_1
+# Command line: vivado.exe -log cordic_synth_design_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cordic_synth_design_wrapper.tcl
+# Log file: C:/Users/Fysek/Documents/projects/cordic/cordic_synth/cordic_synth.runs/synth_1/cordic_synth_design_wrapper.vds
+# Journal file: C:/Users/Fysek/Documents/projects/cordic/cordic_synth/cordic_synth.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source cordic_synth_design_wrapper.tcl -notrace
